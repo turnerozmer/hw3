@@ -10,6 +10,7 @@ class PostsController < ApplicationController
 
     def new
         @post = Post.new
+        @location_id = params["location_id"]
     end
 
     def create
