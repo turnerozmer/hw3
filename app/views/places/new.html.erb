@@ -1,0 +1,11 @@
+<h1>Enter the new Location below!</h1>
+
+<%= form_with model: @place do |form| %>
+  <p>
+    <%= form.label "name", "Place Name" %>
+    <%= form.text_field "name" %>
+  </p>
+  <%= form.submit %>
+<% end %>
+
+<p><a href="/places">Go back to list</a></p>
