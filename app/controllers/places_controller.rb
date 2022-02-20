@@ -17,5 +17,5 @@ class PlacesController < ApplicationController
         @place.save
         redirect_to "/places"
     end
-    
+
 end

@@ -10,13 +10,13 @@ class PostsController < ApplicationController
 
     def new
         @post = Post.new
-        @location_id = params["location_id"]
+        @place_id = params["place_id"]
     end
 
     def create
         @post = Post.new(params["post"])
         @post.save
-        redirect_to "/places/#{post.place.id}"
+        redirect_to "/places/#{@post.place_id}"
     end
 
 end
