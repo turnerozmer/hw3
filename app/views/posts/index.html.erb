@@ -1,0 +1,13 @@
+<h1>View all posts</h1>
+
+ <ul>
+   <% for post in @posts %>
+    <li>
+    <a href="/places/<%=place.id%>"><%= place.name %></a>
+    </li>
+   <% end %>
+</ul>
+
+<p>
+ <a href="/places/new">Enter a new place</a>
+</p>

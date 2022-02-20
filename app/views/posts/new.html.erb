@@ -1,0 +1,20 @@
+<h1>What would you like to remember?</h1>
+
+<%= form_with model: @post do |form| %>
+  <p>
+    <%= form.label "title", "Title" %>
+    <%= form.text_field "title" %>
+  </p>
+  <p>
+    <%= form.label "description", "Description" %>
+    <%= form.text_field "description" %>
+  </p>
+  <p>
+    <%= form.label "posted_on", "Date" %>
+    <%= form.date_field "posted_on" %>
+  </p>
+
+  <%= form.submit %>
+<% end %>
+
+<p><a href="/places">Go back to list</a></p>
