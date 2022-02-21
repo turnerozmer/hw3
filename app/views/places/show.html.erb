@@ -5,9 +5,9 @@
 </p>
 
  <ul>
-   <% for post in @place.posts %>
+   <% for post in  @place.posts%>
     <li>
-    <%=post.title%>
+    <%="#{post.title} \n #{post.description} \n Posted on #{post.posted_on} "%>
     </li>
    <% end %>
 </ul>
