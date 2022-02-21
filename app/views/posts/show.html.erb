@@ -1,0 +1,12 @@
+<h1><%= @post.title%></h1>
+
+<p><%= @post.description%></p>
+
+<p>Posted on <%= @post.posted_on%></p>
+
+
+<p><%= button_to "Delete this Post", @post, method: :delete %></p>
+
+<p>
+ <a href="/posts">Return list of Posts</a>
+</p>
