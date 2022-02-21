@@ -7,7 +7,13 @@
  <ul>
    <% for post in  @place.posts%>
     <li>
-    <%="#{post.title} \n #{post.description} \n Posted on #{post.posted_on} "%>
+    <b>
+    <%="#{post.title}"%> 
+    </b>
+    <br> 
+    <%="     #{post.description}"%> 
+    <br>
+    <%="Posted on #{post.posted_on}"%>
     </li>
    <% end %>
 </ul>
